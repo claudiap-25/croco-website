@@ -1,0 +1,584 @@
+
+
+/*!! Am lucrat cu rezolutie de 1920 x 1080 !!*/
+
+/* Body */
+body {
+  position: relative;
+  margin: 0;
+  background-color: rgb(21,43,17);
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: url('./assets/hero_image.png') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('./assets/background.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Fixate */
+.logo{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+}
+
+#container-menu-bar{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    margin: 0;
+}
+.menu-bar{
+    width:25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0px;
+    border-radius: 20px;
+}
+
+/* Blank inceput */
+
+#blank-inceput {
+    height: 510px;
+}
+
+/* Salvează o generație! */
+
+.mesaj-emotionant{
+    position: relative;
+    margin:0 auto;
+    width: 50%;
+}
+
+.container-titlu{
+    background-color: yellow;
+    width: 250px;
+    height: 30px;
+    transform: skew(15deg);
+    font-size: 18px;
+    font-family: Poppins, Times New Roman;
+    color: rgb(216, 14, 0);
+    text-align: center;
+    margin-left: 100px;
+}
+
+h3 {
+    transform: skew(-25deg);
+    margin: 0px;
+}
+
+.mesaj-emotionant p{
+    background-color: white;
+    width: 630px;
+    padding: 17px 13px;
+    font-size: 11px;
+    font-family: Poppins, Helvetica, Arial;
+    border-radius: 8px;
+    margin-bottom: -8px;
+    margin-top: 0px;
+}
+
+
+.buton-main-page{
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    font-size: 11px;
+    font-family: Poppins, Helvetica, Arial;
+    font-weight: 600;
+    color: rgb(216, 14, 0);
+    border: 2px rgb(216, 14, 0) solid;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: -100px;
+    
+}
+
+#rainbow {
+    font-weight:bold;
+    animation: rainbow 3s infinite;
+}
+
+
+@keyframes rainbow {
+    0% {
+        color:blue
+    }
+
+    50% {
+        color:green;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+/* Sectiunea Croco */
+/* Design coloane */
+
+#coloane{
+    padding: 1.4cm 17px;
+}
+
+#coloane::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.coloana{
+    float: left;
+    box-sizing: border-box;
+}
+
+.unu{
+    width: 38%;
+    padding:2.5mm
+}
+
+.doi{
+    width: 27%;
+    padding: 2.5mm;
+    margin-top: 15px;
+   
+}
+
+.trei {
+    width: 35%;
+    padding: 2.5mm;
+ 
+}
+
+/* Videoclip */
+
+#videoclip .container-titlu {
+width: 180px;
+margin: 0 auto;
+}
+
+#video-yt{
+    width: 400px;
+    height: 230px;
+    margin: 19px;
+    border: 8px green dashed;
+    border-radius:85px 10px 85px 10px;
+}
+
+
+/* Mesaj informativ si indemn */
+
+#macelarie {
+    background-color: white;
+    text-align: center;
+    font-family: Poppins, Helvetica, Arial;
+    font-size: 19px;
+    padding:11px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#macelarie p {
+    margin: 0px;
+}
+
+#incurajare {
+    background-color: white;
+    text-align: center;
+    font-family: Poppins, Helvetica, Arial;
+    font-size: 10px;
+    padding: 11px;
+    margin: 0px 0px 0px 10px;
+    border-radius: 4px;
+    border-top: 2px black dotted;
+
+}
+
+#incurajare p {
+    margin: 0px;
+}
+
+
+.highlights{
+    background-color: yellow;
+    color: red;
+    font-weight: 750;
+}
+
+.poze-macel {
+    width: 35px;
+}
+
+/* Alt design, dar pentru coloana 3 */
+
+.unu .macelarie {
+    margin: 0px;
+}
+
+.doi .container-titlu{
+    margin:0px 0px -8px 0px;
+    width: 220px;
+}
+
+.doi h3{
+    color: rgb(48,102,4);
+}
+
+.doi table {
+    background-color: white;
+    padding: 8px;
+}
+
+/* Ultimele statistici */
+
+#ultimele-statistici{
+    background-color: white;
+    margin-bottom: 13px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#tabel-crocodili-pe-front{
+    background-color: rgb(228,252,235);
+    margin: 0px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px rgb(48,102,4) dotted;
+}
+
+.date-tabele{
+    padding-left: 82px;
+    font-family: Poppins, Helvetica, Arial;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(48,102,4);
+    transform: skew(-10deg);
+
+}
+
+.text-tabele{
+    font-family: Poppins, Helvetica, Arial;
+    font-size: 12px;
+}
+
+#tabel-bug-uri{
+    border-radius: 4px;
+    border: 2px red dotted;
+    margin-top: 10px;
+    padding-top: 2px;
+}
+
+#tabel-bug-uri .date-tabele{
+    color:rgb(216, 14, 0);
+    padding-left: 67px;
+    text-align: right;
+}
+
+#tabel-bug-uri .text-tabele{
+    color:rgb(216, 14, 0);
+    font-weight: 500;
+}
+
+#multe-bug-uri{
+    color: rgb(159,156,154);
+}
+
+#tabel-bug-uri #spatiu{
+    padding-bottom: 18px;
+}
+
+/* Nu vrei pe front? */
+
+#nu-vrei-pe-front {
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 4px;
+
+}
+
+#nu-vrei-pe-front p{
+    margin: 0px;
+    padding: 10px;
+    font-family: Poppins, Helvetica, Arial;
+    font-size: 10px;
+    font-weight: 530;
+    color: rgb(46,96,65);
+}
+
+#nu-vrei-pe-front #p1{
+    padding-bottom: 0px;
+}
+
+#spatele-cortinelor{
+    color: rgb(216, 14, 0);
+}
+
+#pentru-toti{
+    background-color: yellow;
+}
+
+#nu-vrei-pe-front button{
+    background-color: yellow;
+    font-family: Poppins, Helvetica, Arial;
+    font-size: 15px;
+    color:rgb(189,26,3);
+    border: 2px rgb(189,26,3) solid;
+    border-radius: 20px;
+    margin:auto;
+    width: 290px;
+    height: 35px;
+    display: block;
+}
+
+#sursa{
+    vertical-align: super;
+}
+
+#nu-vrei-pe-front button:hover{
+    color: rgb(165,163,35);
+}
+
+/* Poze croco coloana 3 */
+
+#croco-burger{
+    width: 380px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#croco-cry{
+    width: 170px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#croco-pantofi{
+    width: 170px;
+    height: 160px;
+    object-fit: fit;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#crocs{
+    width: 380px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Formular */
+
+#container-formular{
+    background-color: rgb(2,57,4);
+    padding: 50px;
+    height: 425px;
+}
+
+#container-formular h3 {
+    color: rgb(80,125,23);
+    margin: 0;
+}
+
+
+#formular {
+    background-color: white;
+    width: 800px;
+    height: 338px;
+    margin-top: 30px;
+    padding: 10px 5px 5px 5px;
+    border-radius: 10px ;
+    float: left;
+}
+
+.one{
+    width: 30%;
+    padding: 20px 10px 10px 10px;
+}
+
+.two{
+    width:70%;
+    padding:20px 10px 10px 10px;
+}
+
+.one label{
+    font-size:12px;
+    font-family:Poppins, Helvetica, Arial;
+}
+
+.grup-formular{
+    margin-bottom: 20px;
+
+}
+
+.one input{
+    width: 150px;
+    height: 0.5cm;
+    padding: 2px 10px;
+    border: 1px green solid;
+    border-radius: 30px;
+}
+
+#formular label{
+    display: block;
+    margin-bottom: 3px;
+}
+
+#data-nasterii{
+    color: green;
+}
+
+.two{
+    padding: 40px 10px 10px 110px;
+}
+
+.two p{
+    font-family:Poppins, Helvetica, Arial;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.two input{
+    width: 300px;
+    height: 0.6cm;
+    padding: 2px 10px;
+    border: 1px green solid;
+    border-radius: 30px;
+}
+
+.two select{
+    width: 320px;
+    height: 1cm;
+    padding: 2px 13px;
+    border: 1px green solid;
+    border-radius: 30px;
+    font-family:Poppins, Helvetica, Arial;
+    font-size: 13px;
+}
+
+.two option{
+    font-family:Poppins, Helvetica, Arial;
+    font-size: 13px;
+}
+
+#git label{
+    font-family:Poppins, Helvetica, Arial;
+    font-size: 13px;
+    width: 30px;
+    height: 40px;
+    display:inline;
+}
+
+#git input{
+    width: 20px;
+    margin: 0px 50px 25px 10px;
+}
+
+#git p{
+    margin-bottom: 20px; 
+}
+
+#da, #nu {
+    float:left;
+    margin-left: 30px;
+}
+
+#cuv-git{
+    font-weight: bold;
+    color: green;
+}
+
+#trimite {
+    clear: both;
+}
+
+#buton-trimite{
+    padding: 7px 25px;
+    background-color: rgb(21,190,90);
+    color: white;
+    border: 2px green solid;
+    border-radius: 13px;
+}
+
+input:hover{
+    border-radius: 5px;
+}
+
+/* Poze de la formular */
+#container-poze-formular{
+   width: 20%;
+   float: right;
+   position: relative;
+}
+
+#croc-salut{
+    width: 300px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: -70px;
+    object-fit: fit;
+    border: 8px green dashed;
+    border-radius:85px 10px 85px 10px;
+}
+
+#croco-hero{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-left: -200px;
+    object-fit: fit;
+    border: 8px green dashed;
+    border-radius:85px 10px 85px 10px;
+    z-index:1000;
+}
+
+/* Blank final */
+
+#blank-final{
+    height: 200px;
+}
+
+/* Footer */
+
+#footer{
+    height: 50px;
+    background-color: rgb(21, 43, 17);
+    color:white;
+    font-family:Poppins, Helvetica, Arial;
+    font-size: 10px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0;
+}
