@@ -23,7 +23,7 @@
         <div class="container-titlu">
             <h3>Salvează o generație!</h3>
         </div>
-        <p>Au trecut aproape 28 de ani de când specia de crocodili Crocodylus porosus este
+        <p id="istorie">Au trecut aproape 28 de ani de când specia de crocodili Crocodylus porosus este
             pusă în <strong>pericol</strong> de înspăimântătoarele limbaje de programare cu care se află într-o
             continuă confruntare. Indiferent că este vorba de HTML, CSS sau JavaScript
             (incluzând cele <span id="rainbow"><span id="frameworks">0</span> de framework-uri</span>
@@ -31,8 +31,15 @@
             pe acest site), armata crocodililor are nevoie de noi soldați, pregătiți să lupte pe front
             pentru a ne salva!</p>
 
-        <button class = "buton-main-page">Nu te poți înscrie? Donează!</button>
-        
+        <button type="button" class = "buton-main-page" onclick="openPopup()">Nu te poți înscrie? Donează!</button>
+    </div>
+    <div class = "popup" id="popup">
+        <img src="./assets/green_check.png">
+        <h3>Mulțumim!</h3>
+        <p>Folosind amprenta ta digitală (doar nu credeai că ești anonim pe internet, nu?), am
+            extras automat trei sferturi din fondurile disponibile pe cardul tău, pentru a ne ajuta
+            cauza nobilă!</p>
+        <button type="button" onclick="closePopup()">Închide</button>
     </div>
 
     <div id = "coloane">
@@ -115,23 +122,23 @@
             <div class="coloana one">
                 <div class="grup-formular">
                     <label for="prenume">Prenume</label>
-                    <input class="input-hover" type="text" id="prenume">
+                    <input class="input-hover" type="text" id="prenume" required>
                 </div>
                 <div class="grup-formular">
                     <label for="nume">Nume</label>
-                    <input class="input-hover" type="text" id="nume">
+                    <input class="input-hover" type="text" id="nume" required>
                 </div>
                 <div class="grup-formular">
                     <label for="mail">Mail</label>
-                    <input class="input-hover" type="text" id="mail">
+                    <input class="input-hover" type="text" id="mail" required>
                 </div>
                 <div class="grup-formular">
                     <label for="telefon">Telefon</label>
-                    <input class="input-hover" type="text" id="telefon">
+                    <input class="input-hover" type="text" id="telefon" required>
                 </div>
                 <div class="grup-formular">
                     <label for="data-nasterii">Data nașterii</label>
-                    <input class="input-hover" type="date" id="data-nasterii">
+                    <input class="input-hover" type="date" id="data-nasterii" required>
                 </div>
             </div>
 

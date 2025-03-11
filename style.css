@@ -66,9 +66,11 @@ body::after{
 /* Salvează o generație! */
 
 .mesaj-emotionant{
-    position: relative;
-    margin:0 auto;
+    /*position: relative;
+    margin:0 auto;*/
     width: 50%;
+    margin: auto;
+
 }
 
 .container-titlu{
@@ -88,8 +90,8 @@ h3 {
     margin: 0px;
 }
 
-.mesaj-emotionant p{
-    background-color: white;
+#istorie{
+    background-color: rgb(255, 255, 255);
     width: 630px;
     padding: 17px 13px;
     font-size: 11px;
@@ -112,7 +114,69 @@ h3 {
     border-radius: 20px;
     margin-left: 100px;
     margin-top: -100px;
+}
+
+.buton-main-page:hover{
+    cursor:pointer;
+}
+
+.popup{
+    width: 18%;
+    background-color: white;
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 13px;
+    font-family: Poppins, Helvetica, Arial;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+    width: 22%;
+    justify-content: center;
+}
+
+.popup p {
+    text-align: justify;
+    margin: 3px 0 15px 0;
+}
+
+.popup h3{
+    transform: skew(0deg);
+    font-weight: 450;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.popup button{
+    color: #fff;
+    background-color: #000;
+    font-weight: 480;
+    font-size: 12px;
+    font-family: inherit;
+    width: 90px;
+    height: 33px;
+    border: 2px, solid, #000;
+    border-radius: 6px;
+    transition: 0.3s
+}
+.popup button:hover{
+    color: #000;
+    background-color: #fff;
     
+    
+
 }
 
 #rainbow {
@@ -359,6 +423,8 @@ margin: 0 auto;
 
 #nu-vrei-pe-front button:hover{
     color: rgb(165,163,35);
+    cursor:pointer;
+
 }
 
 /* Poze croco coloana 3 */
